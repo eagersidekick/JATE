@@ -19,12 +19,12 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: '.src/-sw.js',
-        title: 'J.A.T.E'
+        template: './index.html',
+        title: 'JATE'
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'src-sw.js',
+        swDest: 'src-sw.js'
       }),
       new WebpackPwaManifest({
         fingerprints: false,
